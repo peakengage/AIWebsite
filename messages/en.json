@@ -16,8 +16,14 @@
   "Hero": {
     "badge": "Mobile-First Platform",
     "tagline": "Mobile First Customer Engagement and Analytics Platform for Businesses",
+    "subtitle": "Digital passes in Apple and Google Wallet, multi-channel campaigns, powerful analytics and AI assistants — all in one platform built for retail.",
     "ctaPrimary": "Get in Touch",
     "ctaSecondary": "Explore Features",
+    "phoneAlt": {
+      "morleysReward": "Morleys Reward loyalty pass in Apple Wallet",
+      "dotz": "Dotz loyalty pass in Apple Wallet",
+      "stampCard": "Stamp card pass in Apple Wallet"
+    },
     "capabilities": {
       "digitalPasses": {
         "title": "Digital Passes",

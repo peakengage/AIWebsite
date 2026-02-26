@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Wallet,
@@ -9,9 +10,8 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SECTION_IDS } from "@/lib/constants";
-import { slideInLeft, slideInRight, staggerContainer } from "@/lib/animations";
+import { slideInLeft, slideInRight, staggerContainer, scaleIn } from "@/lib/animations";
 import { Button } from "@/components/ui/Button";
-import { GradientBadge } from "@/components/ui/GradientBadge";
 import { FeatureCard } from "@/components/ui/FeatureCard";
 import { FeatureGrid } from "@/components/ui/FeatureGrid";
 
@@ -26,6 +26,64 @@ const capabilityKeys = [
   { icon: BrainCircuit, key: "aiAssistants" },
 ];
 
+const heroPhones = [
+  {
+    src: "/assets/images/AppleWallet/MorleysReward.PNG",
+    altKey: "phoneAlt.morleysReward",
+    position: "left",
+  },
+  {
+    src: "/assets/images/AppleWallet/Dotz.PNG",
+    altKey: "phoneAlt.dotz",
+    position: "center",
+  },
+  {
+    src: "/assets/images/AppleWallet/StampCard.png",
+    altKey: "phoneAlt.stampCard",
+    position: "right",
+  },
+];
+
+function HeroPhone({
+  src,
+  alt,
+  className,
+  size = "md",
+  style,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  size?: "sm" | "md";
+  style?: React.CSSProperties;
+}) {
+  const frameSize = size === "sm"
+    ? "rounded-[1.5rem] border-[5px]"
+    : "rounded-[2rem] border-[6px]";
+  const notchSize = size === "sm" ? "w-14 h-4 rounded-b-lg" : "w-16 h-4 rounded-b-xl";
+
+  return (
+    <div className={className} style={style}>
+      <div
+        className={`${frameSize} border-gray-800 bg-gray-800 shadow-2xl overflow-hidden`}
+        role="img"
+        aria-label={alt}
+      >
+        <div className={`absolute top-0 left-1/2 -translate-x-1/2 ${notchSize} bg-gray-800 z-10`} />
+        <div className="relative aspect-[9/19.5] overflow-hidden bg-white">
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            className="object-cover object-top"
+            sizes={size === "sm" ? "180px" : "210px"}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function HeroSection({ onContactClick }: HeroSectionProps) {
   const t = useTranslations("Hero");
 
@@ -37,25 +95,101 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
       {/* Gradient background */}
       <div className="absolute inset-0 gradient-bg" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_60%)]" />
+      <div className="absolute top-1/3 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Hero content */}
+      {/* Main hero content */}
       <motion.div
-        className="relative max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8"
+        className="relative max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-36 pb-16 lg:pb-20"
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
       >
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div variants={slideInLeft}>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight font-heading">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left column: text content */}
+          <div className="text-center lg:text-left">
+            <motion.div variants={slideInLeft}>
+              <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold text-white bg-white/15 border border-white/25">
+                {t("badge")}
+              </span>
+            </motion.div>
+
+            <motion.h1
+              variants={slideInLeft}
+              className="mt-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight font-heading"
+            >
               {t("tagline")}
-            </h1>
+            </motion.h1>
+
+            <motion.p
+              variants={slideInLeft}
+              className="mt-6 text-lg sm:text-xl text-white/80 leading-relaxed max-w-xl mx-auto lg:mx-0"
+            >
+              {t("subtitle")}
+            </motion.p>
+
+            <motion.div
+              variants={slideInLeft}
+              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={onContactClick}
+              >
+                {t("ctaPrimary")}
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                href={`#${SECTION_IDS.digitalPasses}`}
+              >
+                {t("ctaSecondary")}
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Right column: phone mockup composition */}
+          <motion.div
+            variants={slideInRight}
+            className="relative h-[340px] sm:h-[480px] lg:h-[520px] flex items-center justify-center"
+          >
+            {/* Left phone - rotated, hidden on mobile */}
+            <motion.div variants={scaleIn} className="hidden sm:block absolute z-0 left-4 lg:left-8 top-12 sm:top-8">
+              <HeroPhone
+                src={heroPhones[0].src}
+                alt={t(heroPhones[0].altKey)}
+                className="w-[140px] sm:w-[160px] lg:w-[180px]"
+                size="sm"
+                style={{ transform: "rotate(-8deg)" }}
+              />
+            </motion.div>
+
+            {/* Center phone - front, always visible */}
+            <motion.div variants={scaleIn} className="relative z-10">
+              <HeroPhone
+                src={heroPhones[1].src}
+                alt={t(heroPhones[1].altKey)}
+                className="w-[180px] sm:w-[190px] lg:w-[210px]"
+                size="md"
+              />
+            </motion.div>
+
+            {/* Right phone - rotated, hidden on mobile */}
+            <motion.div variants={scaleIn} className="hidden sm:block absolute z-0 right-4 lg:right-8 top-12 sm:top-8">
+              <HeroPhone
+                src={heroPhones[2].src}
+                alt={t(heroPhones[2].altKey)}
+                className="w-[140px] sm:w-[160px] lg:w-[180px]"
+                size="sm"
+                style={{ transform: "rotate(8deg)" }}
+              />
+            </motion.div>
           </motion.div>
         </div>
       </motion.div>
 
       {/* Capability cards */}
-      <div className="relative bg-white/5 backdrop-blur-sm border-t border-white/10">
+      <div className="relative bg-white/10 backdrop-blur-md border-t border-white/15">
         <motion.div
           className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 py-12"
           variants={staggerContainer}
