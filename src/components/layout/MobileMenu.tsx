@@ -31,15 +31,16 @@ export function MobileMenu({ isOpen, onClose, activeSection }: MobileMenuProps) 
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 bottom-0 z-50 w-72 bg-white shadow-2xl md:hidden"
+            className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-72 bg-white shadow-2xl md:hidden"
           >
             <div className="flex items-center justify-between p-4 border-b border-gray-100">
               <Logo />
               <button
                 onClick={onClose}
-                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Close menu"
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30"
               >
-                <X className="w-5 h-5" />
+                <X className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
             <nav className="p-4">
@@ -48,7 +49,7 @@ export function MobileMenu({ isOpen, onClose, activeSection }: MobileMenuProps) 
                   key={item.href}
                   href={item.href}
                   onClick={onClose}
-                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30 ${
                     activeSection === item.href.slice(1)
                       ? "bg-primary/10 text-primary"
                       : "text-gray-700 hover:bg-gray-50"

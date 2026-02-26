@@ -29,7 +29,7 @@ export function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
                   >
                     {tNav(item.labelKey)}
                   </a>
@@ -43,22 +43,22 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">{t("legal")}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white">
                   {t("privacyPolicy")}
                 </a>
               </li>
               <li>
-                <a href="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white">
                   {t("termsOfService")}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white">
                   {t("gdprCompliance")}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white">
                   {t("cookiePolicy")}
                 </a>
               </li>

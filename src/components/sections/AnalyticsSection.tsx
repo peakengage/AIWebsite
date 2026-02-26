@@ -81,7 +81,7 @@ export function AnalyticsSection() {
 
       {/* Dashboard Screenshots Grid */}
       <motion.div variants={fadeInUp} className="mb-16">
-        <h3 className="text-lg font-semibold text-gray-700 text-center mb-6">
+        <h3 className="text-lg font-semibold font-heading text-gray-700 text-center mb-6">
           {t("dashboardScreenshots")}
         </h3>
         <ImageShowcase images={analyticsScreenshots} layout="grid" />

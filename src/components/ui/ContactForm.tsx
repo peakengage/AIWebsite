@@ -73,9 +73,10 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
           >
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              aria-label="Close form"
+              className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30"
             >
-              <X className="w-5 h-5 text-gray-500" />
+              <X className="w-5 h-5 text-gray-500" aria-hidden="true" />
             </button>
 
             <h2 className="text-2xl font-bold font-heading mb-2">{t("heading")}</h2>
@@ -89,6 +90,7 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
                   type="text"
                   name="name"
                   placeholder={t("namePlaceholder")}
+                  aria-label={t("namePlaceholder")}
                   required
                   value={formData.name}
                   onChange={handleChange}
@@ -98,6 +100,7 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
                   type="email"
                   name="email"
                   placeholder={t("emailPlaceholder")}
+                  aria-label={t("emailPlaceholder")}
                   required
                   value={formData.email}
                   onChange={handleChange}
@@ -109,6 +112,7 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
                   type="text"
                   name="company"
                   placeholder={t("companyPlaceholder")}
+                  aria-label={t("companyPlaceholder")}
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
@@ -117,6 +121,7 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
                   type="tel"
                   name="phone"
                   placeholder={t("phonePlaceholder")}
+                  aria-label={t("phonePlaceholder")}
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
@@ -125,6 +130,7 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
               <textarea
                 name="message"
                 placeholder={t("messagePlaceholder")}
+                aria-label={t("messagePlaceholder")}
                 required
                 rows={4}
                 value={formData.message}

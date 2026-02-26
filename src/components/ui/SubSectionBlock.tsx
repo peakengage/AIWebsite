@@ -29,7 +29,7 @@ export function SubSectionBlock({
 }: SubSectionBlockProps) {
   return (
     <motion.div
-      className={cn("grid lg:grid-cols-2 gap-12 items-start", className)}
+      className={cn("grid grid-cols-1 lg:grid-cols-2 gap-12 items-start", className)}
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"

@@ -15,8 +15,8 @@ interface ImageShowcaseProps {
 
 function PhoneFrame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative mx-auto w-[200px] sm:w-[220px]">
-      <div className="rounded-[2rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden">
+    <div className="relative mx-auto w-full max-w-[220px]">
+      <div className="rounded-[2rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden" role="img" aria-label="Phone mockup">
         {/* Notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-gray-800 rounded-b-xl z-10" />
         <div className="relative aspect-[9/19.5] overflow-hidden bg-white">
@@ -29,9 +29,9 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
 
 function BrowserFrame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="rounded-xl border border-gray-200 bg-white shadow-lg overflow-hidden">
+    <div className="rounded-xl border border-gray-200 bg-white shadow-lg overflow-hidden" role="img" aria-label="Browser window">
       {/* Browser top bar */}
-      <div className="flex items-center gap-1.5 px-3 py-2 bg-gray-100 border-b border-gray-200">
+      <div className="flex items-center gap-1.5 px-3 py-2 bg-gray-100 border-b border-gray-200" aria-hidden="true">
         <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
         <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
         <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
@@ -104,7 +104,7 @@ function ImageTabs({ images, className }: { images: ImageItem[]; className?: str
             key={img.src}
             onClick={() => setActiveIndex(i)}
             className={cn(
-              "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+              "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30",
               i === activeIndex
                 ? "bg-primary text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"

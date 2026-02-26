@@ -45,7 +45,7 @@ export function Header({ onContactClick }: HeaderProps) {
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`px-4 py-2 rounded-lg text-base font-medium transition-colors ${
+                  className={`px-4 py-2 rounded-lg text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30 ${
                     activeSection === item.href.slice(1)
                       ? scrolled
                         ? "text-primary bg-primary/10"
@@ -73,22 +73,23 @@ export function Header({ onContactClick }: HeaderProps) {
                 href="https://eu.peakengage.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30 ${
                   scrolled
                     ? "text-gray-700 hover:text-primary hover:bg-gray-50 border border-gray-200"
                     : "text-white hover:bg-white/10 border border-white/30"
                 }`}
               >
                 <Lock className="w-3.5 h-3.5" />
-                Login
+                {t("login")}
               </a>
               <button
                 onClick={() => setMobileOpen(true)}
-                className={`p-2 rounded-lg md:hidden transition-colors ${
+                aria-label="Open menu"
+                className={`p-2 rounded-lg md:hidden transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30 ${
                   scrolled ? "hover:bg-gray-100" : "hover:bg-white/10"
                 }`}
               >
-                <Menu className={`w-6 h-6 ${scrolled ? "text-gray-900" : "text-white"}`} />
+                <Menu className={`w-6 h-6 ${scrolled ? "text-gray-900" : "text-white"}`} aria-hidden="true" />
               </button>
             </div>
           </div>

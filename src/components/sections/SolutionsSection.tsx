@@ -166,7 +166,7 @@ export function SolutionsSection({ onContactClick }: SolutionsSectionProps) {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div variants={fadeInUp}>
             <div className="flex items-center gap-3 mb-4">
               <BrainCircuit className="w-8 h-8 text-tertiary" />
@@ -204,7 +204,7 @@ export function SolutionsSection({ onContactClick }: SolutionsSectionProps) {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div variants={fadeInUp} className="lg:order-2">
             <div className="flex items-center gap-3 mb-4">
               <Receipt className="w-8 h-8 text-tertiary" />
@@ -241,7 +241,7 @@ export function SolutionsSection({ onContactClick }: SolutionsSectionProps) {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div variants={fadeInUp}>
             <div className="flex items-center gap-3 mb-4">
               <ShoppingBag className="w-8 h-8 text-tertiary" />

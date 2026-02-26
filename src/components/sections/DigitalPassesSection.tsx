@@ -87,7 +87,7 @@ export function DigitalPassesSection() {
 
       {/* Wallet Home Screens - side by side phones */}
       <motion.div variants={fadeInUp} className="mb-16">
-        <h3 className="text-lg font-semibold text-gray-700 text-center mb-6">
+        <h3 className="text-lg font-semibold font-heading text-gray-700 text-center mb-6">
           {t("walletHomeScreens")}
         </h3>
         <div className="flex justify-center">
@@ -101,7 +101,7 @@ export function DigitalPassesSection() {
 
       {/* Example Passes Carousel */}
       <motion.div variants={fadeInUp} className="mb-16">
-        <h3 className="text-lg font-semibold text-gray-700 text-center mb-6">
+        <h3 className="text-lg font-semibold font-heading text-gray-700 text-center mb-6">
           {t("examplePasses")}
         </h3>
         <div className="flex justify-center">

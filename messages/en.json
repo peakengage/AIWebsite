@@ -10,7 +10,8 @@
     "dataPlatform": "Data Platform",
     "analytics": "Analytics",
     "solutions": "Solutions",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "login": "Login"
   },
   "Hero": {
     "badge": "Mobile-First Platform",
@@ -275,5 +276,125 @@
     "sendingButton": "Sending...",
     "sentButton": "Message Sent!",
     "errorButton": "Try Again"
+  },
+  "PrivacyPolicy": {
+    "backToHome": "Back to Home",
+    "title": "Privacy Policy",
+    "quote": "Your privacy is critically important to us.",
+    "companyInfo": "Peak Engagement Technologies, LLC",
+    "companyPhone": "Phone: +19253361701",
+    "sections": {
+      "overview": {
+        "title": "Overview",
+        "content": "This policy explains how Peak Engagement Technologies collects and uses information through https://www.peakengage.com. It applies solely to data gathered via the website."
+      },
+      "websiteVisitors": {
+        "title": "Website Visitors",
+        "content1": "The company collects standard non-identifying browser data (type, language preference, referrer, timestamp). This helps understand visitor behaviour trends.",
+        "content2": "The organisation also gathers IP addresses from logged-in users and blog commenters, disclosed under identical circumstances as personally-identifying information."
+      },
+      "piiCollection": {
+        "title": "Personally-Identifying Information Collection",
+        "content": "Visitors engaging with the site may provide personal details. For instance, blog sign-ups require a username and email address. Collection scope depends on interaction type."
+      },
+      "security": {
+        "title": "Security",
+        "content": "No method of transmission over the Internet, or method of electronic storage is 100% secure. The company uses commercially acceptable protections but cannot guarantee absolute security."
+      },
+      "externalLinks": {
+        "title": "External Links",
+        "content": "The website contains third-party links outside company control. Users should review each site's privacy practices independently. The company assumes no responsibility for external content or policies."
+      },
+      "googleAdWords": {
+        "title": "Google AdWords Remarketing",
+        "content": "The site employs remarketing services to advertise to previous visitors across Google properties. Third-party vendors use cookies for targeted ads. Users can adjust preferences via Google Ad Preferences or disable interest-based advertising."
+      },
+      "informationProtection": {
+        "title": "Information Protection & Disclosure",
+        "content1": "Personally-identifying data is shared only with employees, contractors, and affiliated organisations requiring access. Some may operate internationally; using the site implies consent to such transfers.",
+        "content2": "The company will not rent or sell this information. Disclosure occurs only via subpoena, court order, governmental request, or when the company believes disclosure reasonably protects property, rights, or public welfare."
+      },
+      "communications": {
+        "title": "Communications",
+        "content": "Registered users may receive occasional emails about new features, feedback requests, or product updates. Requests may be published to assist other users."
+      },
+      "aggregatedStatistics": {
+        "title": "Aggregated Statistics",
+        "content": "The organisation may publicly display visitor behaviour statistics without disclosing individual personally-identifying information."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content1": "Peak Engagement Technologies, LLC uses \"Cookies\", similar technologies and services provided by others to display personalised content.",
+        "content2": "Cookies store preferences on visitor computers. Users may refuse cookies via browser settings, though certain features may malfunction. Continued site navigation acknowledges cookie acceptance."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "content": "Transaction participants provide additional personal and financial information as necessary. Collection is limited to what is required for transaction fulfilment. Users may decline, potentially preventing certain activities."
+      },
+      "policyChanges": {
+        "title": "Policy Changes",
+        "content": "The company may modify this policy at its discretion. Visitors should check frequently for updates. Continued site use constitutes acceptance of changes."
+      },
+      "contactInformation": {
+        "title": "Contact Information",
+        "email": "loyalty@peakengage.com",
+        "phone": "+19253361701"
+      }
+    }
+  },
+  "TermsOfService": {
+    "backToHome": "Back to Home",
+    "title": "Terms & Conditions",
+    "sections": {
+      "welcome": {
+        "title": "Welcome",
+        "content": "Peak Engagement Technologies, LLC operates at +19253361701. By accessing the website, users accept all terms stated. Continued use implies full acceptance; discontinue if you disagree."
+      },
+      "terminology": {
+        "title": "Terminology",
+        "content": "The agreement defines \"Client\" and \"You\" as website visitors, while \"Company,\" \"We,\" and \"Our\" refer to Peak Engagement Technologies, LLC. All terms relate to how the company assists clients with services and products."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content1": "We employ the use of cookies. By using Peak Engagement Technologies, LLC's website you consent to the use of cookies in accordance with Peak Engagement Technologies, LLC's privacy policy.",
+        "content2": "The company uses cookies for user detail retrieval and site functionality. Affiliate and advertising partners may also use cookies."
+      },
+      "license": {
+        "title": "License",
+        "content": "Peak Engagement Technologies, LLC owns intellectual property rights for website material. Users may view and print pages for personal use only. Prohibited activities include:",
+        "prohibitedItems": [
+          "Republishing material",
+          "Selling, renting, or sub-licensing content",
+          "Reproducing or copying material",
+          "Redistributing content without explicit permission"
+        ]
+      },
+      "hyperlinking": {
+        "title": "Hyperlinking Policy",
+        "content1": "Certain organisations may link without approval: government agencies, search engines, news organisations, online directories, and accredited businesses. Links must not be misleading or falsely imply sponsorship.",
+        "content2": "Other organisations (Chambers of Commerce, educational institutions, law firms) may request approval. Approved links must use the company name, URL, or contextual descriptions — no logo use without trademark licence."
+      },
+      "iframes": {
+        "title": "Iframes",
+        "content": "Creating frames around pages or altering visual presentation requires prior written permission."
+      },
+      "reservationOfRights": {
+        "title": "Reservation of Rights",
+        "content": "The company reserves the right to request link removal at any time and amend terms unilaterally."
+      },
+      "contentLiability": {
+        "title": "Content Liability",
+        "content": "No link(s) may appear on any page on your website or within any context containing content or materials that may be interpreted as libelous, obscene or criminal. Users indemnify the company against claims arising from their website."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website. Exceptions include death, personal injury from negligence, and fraudulent misrepresentation. Free services carry no liability for loss or damage."
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "loyalty@peakengage.com",
+        "phone": "+19253361701"
+      }
+    }
   }
 }
