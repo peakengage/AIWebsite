@@ -1,0 +1,129 @@
+- Four headers at top for navigation
+	- Digital Passes/cards
+	- Campaigns and Communications
+	- Data Platform
+	- Analytics & Reporting
+	- Solutions
+
+- Top block with Tagline "Mobile First Customer Engagement and Analytics Platform for Businesses" and the following core information
+	- Digital Passes (Store & Loyalty) in Apple and Google Wallet 
+ 	- Multi-channel (Email, Notifications, SMS, WhatsApp) campaign
+	- Analytics reporting and dashboarding    
+	- AI Assistants for executives, CRM managers, customer service and store managers
+
+One block each for the top four header navigation items
+Digital Passes/Cards
+- Engage with your customers via frictionless adoption/distribution of digital cards and passes for Apple and Google Wallet
+	- Loyalty & store cards, membership & ID cards, coupons, offers & tickets
+	- Dynamic, personalized and updatable passes
+	- Distribute via QR code or url, personalized url links sent via email, SMS or print 
+	[ Image - AppleWalletHomeScreen.png and GoogleWalletHomeScreen.jpg framed with iPhone 16 Pro and Android Phone frame]
+	[ Image - MorleysReward.png (iPhone) and Dotz.png (iPhone) and MenarysRewardMe-in-GoogleWallet.jpg (Android) - Morleys-in-GoogleWallet.jpg (Android]
+	[ Add a demo card]
+
+Campaigns and Communications
+- Multi channel campaign management
+	- Push notifications
+		- Engage directly with customers on mobile via SMS style notifications 
+	- Email
+		- Flexible template based email editor(s) with customer profile based personalization
+		- Intelligent email contact management to ensure highest deliverability and reputation 
+	- SMS
+		- Standard traditional SMS marketing  
+	- WhatsApp
+		- Market to your customers inside the WhatsApp application with business profiles
+	[ Images in Dashboard/Campagin folder CampaignListPage.jpeg, AudienceAndChannelTab.jpeg, ContentTab.jpeg, ScheduleRunTab.jpeg, EmailEditor.jpeg]
+
+Data Platform
+- Customer profile
+	- 360 customer profile access
+		- Preferences and personalization
+	- Support for multiple profile types 
+	- Flexible and automated attribution 
+	[ Image Combine these images of different customer page tab in the Dashboard/Customer folder ProfileTab.jpeg, NotificationTab.jpeg, EmailTab.jpep, SMSTab.jpeg, TransactionTab.jpeg, TransactionDetail.jpg, EngagementTab.jpeg, CardTab.jpeg] 
+
+- Customer segmentation and audience builder
+	- Profile filter
+	- Transaction filtering
+	- Custom build use-case specific filter using different strategies 
+	- Import external customer lists
+	[ Image in Dashboard/Audience folder Audiencebuilder1.jpeg, Audiencebuilder2.jpeg, Audiencebuilder3.jpep]
+
+- Flexible Different schemes
+	- Promotions
+	- Vouchers
+	- Discount codes
+	[ Image in Dashboard/Promotion folder MenarysPromotionPage.jpeg, MenarysPromotionEdit.jpeg]
+
+- Transactions
+- Inventory
+- Loyalty 
+
+Analytics and reporting 
+	- Supports wide variety of visualization widgets and data tables
+	- Different types of time resolution and timeframe selection 
+	- Multiple customizable pre-defined reports for 
+		- Loyalty and non loyalty
+		- Sales
+		- Customer engagement 
+		- Email and SMS campaigns
+	[ Images Dashboard/Analytics folder CRMAnalytics-Cards.jpeg, LoyaltyNonLoyalty.jpeg, EmailReporting.jpeg, SalesByHour.jpeg, DailySales.jpeg, SystemMetrics.jpeg]
+
+Solutions
+AI Assistants for marketing, sales and business staff
+	- Automatic application of machine learning and AI to customer data 
+	- Secure/privately hosted LLM for natural language based interaction using text or voice with your business data
+		- Access via PeakEngage mobile app
+	- Access to realtime analytics and customer data
+	- LLM based natural language interface via text or voice
+	- Configurable mobile notifications and alerts
+	- Store manager reports to engage with customers via phone and text
+	- The Peak Loyalty POS mobile app
+	[ Image - PeakPOSApp folder pos-loyalty-app.jpeg] 
+	[ Link/buttons to download app from app stores]
+	[ Image of Mobile phone for voice access chatbot]
+
+Email Receipts
+	- Integrated realtime digital receipts of sale transaction directly on the customers phone
+		[ Digital SaleNotification.PNG, SalesNotificationOnPassDetail.png and SaleReceipts.PNG]
+
+
+CRM for Retail 
+- POS integrated promotions, loyalty and rewards platform for retailers
+	- Makes it very easy to collect and redeem points/monetary for customers
+	- Customer enrollment thru POS or Self-registration
+	- Automatic event based engagement (Registrations, Birthdays, Anniversary
+	- Multiple types of loyalty and reward schemes
+	- Single use discount codes 
+	[ RegisterOrGetYourCard.png, Self-Register,png, ExistingMemberGetCard.png]
+	[ Images of dashboard/analytics folder FuturaLoyalty.jpeg]
+
+- Retailer POS integration
+	- Futura integration via realtime API and scheduled updates
+	- Complete synchronization
+		- Customer profiles
+			- Two way synchronization 
+		- Loyalty 
+		- Transactions
+	- Simple, flexible REST API and file based approach to integrating with any POS system
+	[ Futura Image, link to Futura site, Postman image]
+
+- Complete SaaS based platform
+	- Makes it very easy to onboard new customers
+	- Configurable and flexible to incorporate customer specific requirements
+	- Complete web accessible dashboard with security and roles
+	- Automated export/import capabilities to integrate with other system
+	- Data protection & GDPR complaint
+	- Multilingual support and white labeled service option available 
+	- Multiple cost effective subscription plans
+	[ Image of portal, Smart fields, Biz (store location), staff page, import page, File manager]
+
+Website Organization
+--------------------
+- This is an information website and less of just pure marketing. Visitors to the site should be able to get details of what is being provided. 
+- Single page that can completely be scrolled 
+- 5 sections above. Can directly jump to any of these section from the 'header' at the top
+- Footer - Similar to what is there currently 
+- "Get in touch" Captcha for current site is broken. 
+
+

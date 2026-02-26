@@ -1,0 +1,279 @@
+{
+  "Metadata": {
+    "title": "PeakEngage — Mobile First Customer Engagement and Analytics Platform",
+    "description": "PeakEngage is a mobile-first customer engagement and analytics platform — digital passes in Apple and Google Wallet, multi-channel campaigns, data platform, analytics, and AI assistants for businesses.",
+    "keywords": "customer engagement platform, digital passes, Apple Wallet, Google Wallet, loyalty cards, multi-channel campaigns, push notifications, email marketing, SMS, WhatsApp, CRM, analytics, AI assistants, retail"
+  },
+  "Nav": {
+    "digitalPasses": "Digital Passes",
+    "campaigns": "Campaigns",
+    "dataPlatform": "Data Platform",
+    "analytics": "Analytics",
+    "solutions": "Solutions",
+    "contactUs": "Contact Us"
+  },
+  "Hero": {
+    "badge": "Mobile-First Platform",
+    "tagline": "Mobile First Customer Engagement and Analytics Platform for Businesses",
+    "ctaPrimary": "Get in Touch",
+    "ctaSecondary": "Explore Features",
+    "capabilities": {
+      "digitalPasses": {
+        "title": "Digital Passes",
+        "description": "Store & Loyalty cards in Apple and Google Wallet"
+      },
+      "multiChannel": {
+        "title": "Multi-Channel Campaigns",
+        "description": "Email, Push Notifications, SMS and WhatsApp campaign management"
+      },
+      "analytics": {
+        "title": "Analytics & Reporting",
+        "description": "Comprehensive analytics reporting and dashboarding"
+      },
+      "aiAssistants": {
+        "title": "AI Assistants",
+        "description": "For executives, CRM managers, customer service and store managers"
+      }
+    }
+  },
+  "DigitalPasses": {
+    "badge": "Digital Passes & Cards",
+    "heading": "Digital Cards and Passes for",
+    "headingHighlight": "Apple and Google Wallet",
+    "description": "Engage with your customers via frictionless adoption and distribution of digital cards and passes for Apple and Google Wallet.",
+    "features": {
+      "loyaltyCards": {
+        "title": "Loyalty & Store Cards",
+        "description": "Digital loyalty and store cards that customers always have in their wallet."
+      },
+      "membershipCards": {
+        "title": "Membership & ID Cards",
+        "description": "Digital membership cards, ID cards and passes for frictionless identification."
+      },
+      "couponsOffers": {
+        "title": "Coupons, Offers & Tickets",
+        "description": "Distribute digital coupons, promotional offers and event tickets directly to wallets."
+      },
+      "dynamicPasses": {
+        "title": "Dynamic & Personalized",
+        "description": "Dynamic, personalized and updatable passes that keep customers engaged with real-time content."
+      },
+      "distribution": {
+        "title": "Flexible Distribution",
+        "description": "Distribute via QR code or URL, personalized URL links sent via email, SMS or print."
+      }
+    },
+    "addDemoCard": "Add a Demo Card",
+    "walletHomeScreens": "Digital Passes in Apple & Google Wallet",
+    "examplePasses": "Example Loyalty Passes"
+  },
+  "Campaigns": {
+    "badge": "Campaigns & Communications",
+    "heading": "Multi-Channel",
+    "headingHighlight": "Campaign Management",
+    "description": "Reach your customers across every channel from a single platform. Design, launch and track campaigns with powerful tools.",
+    "channels": {
+      "pushNotifications": {
+        "title": "Push Notifications",
+        "description": "Engage directly with customers on mobile via SMS-style notifications on their lock screen."
+      },
+      "email": {
+        "title": "Email",
+        "description": "Flexible template-based email editor with customer profile-based personalization and intelligent contact management to ensure highest deliverability and reputation."
+      },
+      "sms": {
+        "title": "SMS",
+        "description": "Standard traditional SMS marketing to reach customers directly on their phones."
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Market to your customers inside the WhatsApp application with business profiles."
+      }
+    },
+    "steps": {
+      "campaignList": "Campaign List",
+      "audienceChannel": "Audience & Channel",
+      "content": "Content",
+      "scheduleRun": "Schedule & Run",
+      "emailEditor": "Email Editor"
+    }
+  },
+  "DataPlatform": {
+    "badge": "Data Platform",
+    "heading": "Comprehensive",
+    "headingHighlight": "Data Platform",
+    "description": "A unified data platform that brings together customer profiles, segmentation, promotions and more — all in one place.",
+    "customerProfile": {
+      "title": "360° Customer Profile",
+      "description": "Complete customer profile access with preferences, personalization, support for multiple profile types and flexible automated attribution.",
+      "bullets": [
+        "Preferences and personalization",
+        "Support for multiple profile types",
+        "Flexible and automated attribution",
+        "360-degree customer view across all touchpoints"
+      ],
+      "tabs": {
+        "profile": "Profile",
+        "notifications": "Notifications",
+        "email": "Email",
+        "sms": "SMS",
+        "transactions": "Transactions",
+        "transactionDetails": "Transaction Details",
+        "engagement": "Engagement",
+        "cards": "Cards"
+      }
+    },
+    "segmentation": {
+      "title": "Customer Segmentation & Audience Builder",
+      "description": "Build powerful customer segments with flexible filtering and targeting capabilities.",
+      "bullets": [
+        "Profile-based filtering",
+        "Transaction-based filtering",
+        "Custom use-case specific filters using different strategies",
+        "Import external customer lists"
+      ]
+    },
+    "schemes": {
+      "title": "Promotions, Vouchers & Discount Codes",
+      "description": "Flexible schemes to drive engagement with promotions, vouchers and discount codes.",
+      "bullets": [
+        "Promotions management",
+        "Voucher creation and tracking",
+        "Single-use and batch discount codes"
+      ]
+    },
+    "additionalFeatures": {
+      "transactions": {
+        "title": "Transactions",
+        "description": "Complete transaction data management and synchronization from POS systems."
+      },
+      "inventory": {
+        "title": "Inventory",
+        "description": "Inventory data integration for product-level insights and analytics."
+      },
+      "loyalty": {
+        "title": "Loyalty",
+        "description": "Loyalty program data management with points, tiers and reward tracking."
+      }
+    }
+  },
+  "Analytics": {
+    "badge": "Analytics & Reporting",
+    "heading": "Powerful",
+    "headingHighlight": "Analytics & Reporting",
+    "description": "Comprehensive analytics with a wide variety of visualization widgets and data tables. Multiple time resolutions and timeframe selections for deep insight.",
+    "reports": {
+      "loyaltyNonLoyalty": {
+        "title": "Loyalty & Non-Loyalty",
+        "description": "Compare loyalty vs non-loyalty customer behaviour, spend patterns and engagement."
+      },
+      "sales": {
+        "title": "Sales Analytics",
+        "description": "Track sales by hour, daily trends, product performance and revenue metrics."
+      },
+      "customerEngagement": {
+        "title": "Customer Engagement",
+        "description": "Monitor customer engagement metrics across all channels and touchpoints."
+      },
+      "emailSmsCampaigns": {
+        "title": "Email & SMS Campaigns",
+        "description": "Detailed campaign performance reporting with deliverability, open rates and conversions."
+      }
+    },
+    "dashboardScreenshots": "Pre-built Customizable Reports"
+  },
+  "Solutions": {
+    "badge": "Solutions",
+    "heading": "Complete",
+    "headingHighlight": "Business Solutions",
+    "description": "End-to-end solutions for retail businesses — from AI-powered assistants to POS integration and a complete SaaS platform.",
+    "aiAssistants": {
+      "title": "AI Assistants",
+      "description": "AI assistants for marketing, sales and business staff powered by machine learning and privately hosted LLMs.",
+      "bullets": [
+        "Automatic application of machine learning and AI to customer data",
+        "Secure, privately hosted LLM for natural language interaction using text or voice",
+        "Access via PeakEngage mobile app",
+        "Access to real-time analytics and customer data",
+        "LLM-based natural language interface via text or voice",
+        "Configurable mobile notifications and alerts",
+        "Store manager reports to engage with customers via phone and text"
+      ],
+      "posApp": "The Peak Loyalty POS Mobile App",
+      "appStoreNote": "Available on iOS and Android"
+    },
+    "emailReceipts": {
+      "title": "Email Receipts",
+      "description": "Integrated real-time digital receipts of sale transactions delivered directly on the customer's phone.",
+      "bullets": [
+        "Real-time sale notifications on the customer's device",
+        "Digital receipt details accessible from the wallet pass",
+        "Complete transaction history for the customer"
+      ]
+    },
+    "crmForRetail": {
+      "title": "CRM for Retail",
+      "description": "POS-integrated promotions, loyalty and rewards platform for retailers. Makes it easy to collect and redeem points for customers.",
+      "bullets": [
+        "Customer enrollment through POS or self-registration",
+        "Automatic event-based engagement (registrations, birthdays, anniversaries)",
+        "Multiple types of loyalty and reward schemes",
+        "Single-use discount codes",
+        "Easy points collection and redemption"
+      ]
+    },
+    "posIntegration": {
+      "title": "Retailer POS Integration",
+      "description": "Seamless integration with your existing POS system for real-time data synchronization.",
+      "bullets": [
+        "Futura integration via real-time API and scheduled updates",
+        "Complete two-way customer profile synchronization",
+        "Loyalty and transaction data sync",
+        "Simple, flexible REST API and file-based approach to integrating with any POS system"
+      ]
+    },
+    "saasPlatform": {
+      "title": "Complete SaaS Platform",
+      "description": "A complete cloud-based platform that makes it easy to onboard new customers and manage your entire engagement strategy.",
+      "bullets": [
+        "Easy to onboard new customers",
+        "Configurable and flexible for customer-specific requirements",
+        "Complete web-accessible dashboard with security and roles",
+        "Automated export/import capabilities to integrate with other systems",
+        "Data protection and GDPR compliant",
+        "Multilingual support and white-labelled service option available",
+        "Multiple cost-effective subscription plans"
+      ]
+    },
+    "cta": {
+      "heading": "Ready to Transform Your Customer Engagement?",
+      "description": "Get in touch to learn how PeakEngage can help your business build stronger customer relationships and drive growth.",
+      "button": "Contact Us"
+    }
+  },
+  "Footer": {
+    "brandDescription": "Mobile First Customer Engagement and Analytics Platform for Businesses. Digital wallet passes, multi-channel campaigns, data platform, analytics, and AI assistants.",
+    "solutions": "Solutions",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "gdprCompliance": "GDPR Compliance",
+    "cookiePolicy": "Cookie Policy",
+    "companyName": "Peak Engagement Technologies",
+    "copyright": "© {year} Peak Engagement Technologies. All rights reserved."
+  },
+  "ContactForm": {
+    "heading": "Get in Touch",
+    "description": "Tell us about your business and we'll show you how PeakEngage can help.",
+    "namePlaceholder": "Full name *",
+    "emailPlaceholder": "Email address *",
+    "companyPlaceholder": "Company name",
+    "phonePlaceholder": "Phone number",
+    "messagePlaceholder": "How can we help you? *",
+    "sendButton": "Send Message",
+    "sendingButton": "Sending...",
+    "sentButton": "Message Sent!",
+    "errorButton": "Try Again"
+  }
+}
