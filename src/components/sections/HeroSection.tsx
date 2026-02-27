@@ -10,10 +10,8 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SECTION_IDS } from "@/lib/constants";
-import { slideInLeft, slideInRight, staggerContainer, scaleIn } from "@/lib/animations";
+import { slideInLeft, slideInRight, staggerContainer, scaleIn, fadeInUp } from "@/lib/animations";
 import { Button } from "@/components/ui/Button";
-import { FeatureCard } from "@/components/ui/FeatureCard";
-import { FeatureGrid } from "@/components/ui/FeatureGrid";
 
 import morleysRewardImg from "@/../public/assets/images/AppleWallet/MorleysReward.PNG";
 import dotzImg from "@/../public/assets/images/AppleWallet/Dotz.PNG";
@@ -24,10 +22,10 @@ interface HeroSectionProps {
 }
 
 const capabilityKeys = [
-  { icon: Wallet, key: "digitalPasses" },
-  { icon: Bell, key: "multiChannel" },
-  { icon: BarChart3, key: "analytics" },
-  { icon: BrainCircuit, key: "aiAssistants" },
+  { icon: Wallet, key: "digitalPasses", href: `#${SECTION_IDS.digitalPasses}` },
+  { icon: Bell, key: "multiChannel", href: `#${SECTION_IDS.campaigns}` },
+  { icon: BarChart3, key: "analytics", href: `#${SECTION_IDS.analytics}` },
+  { icon: BrainCircuit, key: "aiAssistants", href: `#${SECTION_IDS.solutions}` },
 ];
 
 const heroPhones = [
@@ -193,25 +191,37 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
       </motion.div>
 
       {/* Capability cards */}
-      <div className="relative bg-white/10 backdrop-blur-md border-t border-white/15">
+      <div className="relative bg-white border-t border-gray-100">
         <motion.div
-          className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 py-12"
+          className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 py-14"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <FeatureGrid columns={4}>
-            {capabilityKeys.map((c) => (
-              <FeatureCard
-                key={c.key}
-                icon={c.icon}
-                title={t(`capabilities.${c.key}.title`)}
-                description={t(`capabilities.${c.key}.description`)}
-                variant="glass"
-              />
-            ))}
-          </FeatureGrid>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {capabilityKeys.map((c) => {
+              const Icon = c.icon;
+              return (
+                <motion.a
+                  key={c.key}
+                  href={c.href}
+                  variants={fadeInUp}
+                  className="group relative p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                    <Icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 font-heading mb-2">
+                    {t(`capabilities.${c.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {t(`capabilities.${c.key}.description`)}
+                  </p>
+                </motion.a>
+              );
+            })}
+          </div>
         </motion.div>
       </div>
     </section>
