@@ -2,7 +2,7 @@
 set -euo pipefail
 
 APP_DIR="$HOME/AIWebsite"
-BRANCH="${1:-develop}"
+BRANCH="${1:-main}"
 HEALTH_URL="http://localhost:3000"
 HEALTH_RETRIES=10
 HEALTH_DELAY=3
