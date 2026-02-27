@@ -18,6 +18,13 @@ import { FeatureGrid } from "@/components/ui/FeatureGrid";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
 import { Button } from "@/components/ui/Button";
 
+import appleWalletHomeScreenImg from "@/../public/assets/images/AppleWallet/AppleWalletHomeScreen.PNG";
+import googleWalletHomeScreenImg from "@/../public/assets/images/GoogleWallet/GoogleWalletHomeScreen.jpg";
+import morleysRewardImg from "@/../public/assets/images/AppleWallet/MorleysReward.PNG";
+import dotzImg from "@/../public/assets/images/AppleWallet/Dotz.PNG";
+import menarysGoogleImg from "@/../public/assets/images/GoogleWallet/MenarysRewardMe-in-GoogleWallet.jpg";
+import morleysGoogleImg from "@/../public/assets/images/GoogleWallet/Morleys-in-GoogleWallet.jpg";
+
 const featureKeys = [
   { icon: CreditCard, key: "loyaltyCards" },
   { icon: IdCard, key: "membershipCards" },
@@ -28,12 +35,12 @@ const featureKeys = [
 
 const walletHomeScreens = [
   {
-    src: "/assets/images/AppleWallet/AppleWalletHomeScreen.PNG",
+    src: appleWalletHomeScreenImg,
     alt: "Apple Wallet Home Screen with digital passes",
     label: "Apple Wallet",
   },
   {
-    src: "/assets/images/GoogleWallet/GoogleWalletHomeScreen.jpg",
+    src: googleWalletHomeScreenImg,
     alt: "Google Wallet Home Screen with digital passes",
     label: "Google Wallet",
   },
@@ -41,22 +48,22 @@ const walletHomeScreens = [
 
 const examplePasses = [
   {
-    src: "/assets/images/AppleWallet/MorleysReward.PNG",
+    src: morleysRewardImg,
     alt: "Morleys Reward loyalty pass in Apple Wallet",
     label: "Morleys Reward",
   },
   {
-    src: "/assets/images/AppleWallet/Dotz.PNG",
+    src: dotzImg,
     alt: "Dotz loyalty pass in Apple Wallet",
     label: "Dotz",
   },
   {
-    src: "/assets/images/GoogleWallet/MenarysRewardMe-in-GoogleWallet.jpg",
+    src: menarysGoogleImg,
     alt: "Menarys RewardMe pass in Google Wallet",
     label: "Menarys (Google)",
   },
   {
-    src: "/assets/images/GoogleWallet/Morleys-in-GoogleWallet.jpg",
+    src: morleysGoogleImg,
     alt: "Morleys pass in Google Wallet",
     label: "Morleys (Google)",
   },

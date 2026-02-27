@@ -16,6 +16,13 @@ import { FeatureCard } from "@/components/ui/FeatureCard";
 import { FeatureGrid } from "@/components/ui/FeatureGrid";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
 
+import crmAnalyticsCardsImg from "@/../public/assets/images/Dashboard/Analytics/CRMAnalytics-Cards.jpeg";
+import loyaltyNonLoyaltyImg from "@/../public/assets/images/Dashboard/Analytics/LoyaltyNonLoyalty.jpeg";
+import emailReportingImg from "@/../public/assets/images/Dashboard/Analytics/EmailReporting.jpeg";
+import salesByHourImg from "@/../public/assets/images/Dashboard/Analytics/SalesByHour.jpeg";
+import dailySalesImg from "@/../public/assets/images/Dashboard/Analytics/DailySales.jpeg";
+import systemMetricsImg from "@/../public/assets/images/Dashboard/Analytics/SystemMetrics.jpeg";
+
 const reportKeys = [
   { icon: Users, key: "loyaltyNonLoyalty" },
   { icon: TrendingUp, key: "sales" },
@@ -25,32 +32,32 @@ const reportKeys = [
 
 const analyticsScreenshots = [
   {
-    src: "/assets/images/Dashboard/Analytics/CRMAnalytics-Cards.jpeg",
+    src: crmAnalyticsCardsImg,
     alt: "CRM Analytics overview with key metric cards",
     label: "CRM Analytics",
   },
   {
-    src: "/assets/images/Dashboard/Analytics/LoyaltyNonLoyalty.jpeg",
+    src: loyaltyNonLoyaltyImg,
     alt: "Loyalty vs Non-Loyalty customer comparison report",
     label: "Loyalty vs Non-Loyalty",
   },
   {
-    src: "/assets/images/Dashboard/Analytics/EmailReporting.jpeg",
+    src: emailReportingImg,
     alt: "Email campaign reporting dashboard",
     label: "Email Reporting",
   },
   {
-    src: "/assets/images/Dashboard/Analytics/SalesByHour.jpeg",
+    src: salesByHourImg,
     alt: "Sales by hour analysis chart",
     label: "Sales by Hour",
   },
   {
-    src: "/assets/images/Dashboard/Analytics/DailySales.jpeg",
+    src: dailySalesImg,
     alt: "Daily sales trend report",
     label: "Daily Sales",
   },
   {
-    src: "/assets/images/Dashboard/Analytics/SystemMetrics.jpeg",
+    src: systemMetricsImg,
     alt: "System performance metrics dashboard",
     label: "System Metrics",
   },

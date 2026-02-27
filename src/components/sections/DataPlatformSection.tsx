@@ -16,44 +16,58 @@ import { FeatureGrid } from "@/components/ui/FeatureGrid";
 import { SubSectionBlock } from "@/components/ui/SubSectionBlock";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
 
+import profileTabImg from "@/../public/assets/images/Dashboard/Customers/ProfileTab.jpeg";
+import notificationTabImg from "@/../public/assets/images/Dashboard/Customers/NotificationTab.jpeg";
+import emailTabImg from "@/../public/assets/images/Dashboard/Customers/EmailTab.jpeg";
+import smsTabImg from "@/../public/assets/images/Dashboard/Customers/SMSTab.jpeg";
+import transactionsTabImg from "@/../public/assets/images/Dashboard/Customers/TransactionsTab.jpeg";
+import transactionDetailsImg from "@/../public/assets/images/Dashboard/Customers/TransactionDetails.jpeg";
+import engagementTabImg from "@/../public/assets/images/Dashboard/Customers/EngagementTab.jpeg";
+import cardsTabImg from "@/../public/assets/images/Dashboard/Customers/CardsTab.jpeg";
+import audienceBuilder1Img from "@/../public/assets/images/Dashboard/Audience/Audiencebuilder1.jpeg";
+import audienceBuilder2Img from "@/../public/assets/images/Dashboard/Audience/Audiencebuilder2.jpeg";
+import audienceBuilder3Img from "@/../public/assets/images/Dashboard/Audience/Audiencebuilder3.jpeg";
+import menarysPromotionPageImg from "@/../public/assets/images/Dashboard/Promotion/MenarysPromotionPage.jpeg";
+import menarysPromotionEditImg from "@/../public/assets/images/Dashboard/Promotion/MenarysPromotionEdit.jpeg";
+
 const customerProfileTabs = [
   {
-    src: "/assets/images/Dashboard/Customers/ProfileTab.jpeg",
+    src: profileTabImg,
     alt: "Customer profile tab",
     label: "Profile",
   },
   {
-    src: "/assets/images/Dashboard/Customers/NotificationTab.jpeg",
+    src: notificationTabImg,
     alt: "Customer notifications tab",
     label: "Notifications",
   },
   {
-    src: "/assets/images/Dashboard/Customers/EmailTab.jpeg",
+    src: emailTabImg,
     alt: "Customer email tab",
     label: "Email",
   },
   {
-    src: "/assets/images/Dashboard/Customers/SMSTab.jpeg",
+    src: smsTabImg,
     alt: "Customer SMS tab",
     label: "SMS",
   },
   {
-    src: "/assets/images/Dashboard/Customers/TransactionsTab.jpeg",
+    src: transactionsTabImg,
     alt: "Customer transactions tab",
     label: "Transactions",
   },
   {
-    src: "/assets/images/Dashboard/Customers/TransactionDetails.jpeg",
+    src: transactionDetailsImg,
     alt: "Transaction detail view",
     label: "Transaction Details",
   },
   {
-    src: "/assets/images/Dashboard/Customers/EngagementTab.jpeg",
+    src: engagementTabImg,
     alt: "Customer engagement tab",
     label: "Engagement",
   },
   {
-    src: "/assets/images/Dashboard/Customers/CardsTab.jpeg",
+    src: cardsTabImg,
     alt: "Customer cards tab",
     label: "Cards",
   },
@@ -61,17 +75,17 @@ const customerProfileTabs = [
 
 const audienceBuilderImages = [
   {
-    src: "/assets/images/Dashboard/Audience/Audiencebuilder1.jpeg",
+    src: audienceBuilder1Img,
     alt: "Audience builder - filter selection",
     label: "Filter Selection",
   },
   {
-    src: "/assets/images/Dashboard/Audience/Audiencebuilder2.jpeg",
+    src: audienceBuilder2Img,
     alt: "Audience builder - segment criteria",
     label: "Segment Criteria",
   },
   {
-    src: "/assets/images/Dashboard/Audience/Audiencebuilder3.jpeg",
+    src: audienceBuilder3Img,
     alt: "Audience builder - results preview",
     label: "Results Preview",
   },
@@ -79,12 +93,12 @@ const audienceBuilderImages = [
 
 const promotionImages = [
   {
-    src: "/assets/images/Dashboard/Promotion/MenarysPromotionPage.jpeg",
+    src: menarysPromotionPageImg,
     alt: "Promotions management page",
     label: "Promotions List",
   },
   {
-    src: "/assets/images/Dashboard/Promotion/MenarysPromotionEdit.jpeg",
+    src: menarysPromotionEditImg,
     alt: "Promotion editing interface",
     label: "Edit Promotion",
   },

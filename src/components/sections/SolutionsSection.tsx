@@ -26,13 +26,22 @@ import { SubSectionBlock } from "@/components/ui/SubSectionBlock";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
 import { Button } from "@/components/ui/Button";
 
+import posLoyaltyAppImg from "@/../public/assets/images/PeakPOSApp/pos-loyalty-app.png";
+import saleNotificationImg from "@/../public/assets/images/AppleWallet/SaleNotification.PNG";
+import salesNotificationPassDetailImg from "@/../public/assets/images/AppleWallet/SalesNotificationOnPassDetail.PNG";
+import saleReceiptsImg from "@/../public/assets/images/AppleWallet/SaleReceipts.PNG";
+import registerOrGetCardImg from "@/../public/assets/images/Dashboard/OtherPages/RegisterOrGetYourCard.PNG";
+import selfRegisterImg from "@/../public/assets/images/Dashboard/OtherPages/Self-Register.PNG";
+import existingMemberGetCardImg from "@/../public/assets/images/Dashboard/OtherPages/ExistingMemberGetCard.PNG";
+import futuraLoyaltyImg from "@/../public/assets/images/Dashboard/Analytics/FuturaLoyalty.jpeg";
+
 interface SolutionsSectionProps {
   onContactClick: () => void;
 }
 
 const posAppImages = [
   {
-    src: "/assets/images/PeakPOSApp/pos-loyalty-app.png",
+    src: posLoyaltyAppImg,
     alt: "Peak Loyalty POS mobile app",
     label: "Peak Loyalty POS App",
   },
@@ -40,17 +49,17 @@ const posAppImages = [
 
 const emailReceiptImages = [
   {
-    src: "/assets/images/AppleWallet/SaleNotification.PNG",
+    src: saleNotificationImg,
     alt: "Sale notification on customer device",
     label: "Sale Notification",
   },
   {
-    src: "/assets/images/AppleWallet/SalesNotificationOnPassDetail.PNG",
+    src: salesNotificationPassDetailImg,
     alt: "Sale notification on pass detail screen",
     label: "Pass Detail",
   },
   {
-    src: "/assets/images/AppleWallet/SaleReceipts.PNG",
+    src: saleReceiptsImg,
     alt: "Digital sale receipts",
     label: "Sale Receipts",
   },
@@ -58,17 +67,17 @@ const emailReceiptImages = [
 
 const crmImages = [
   {
-    src: "/assets/images/Dashboard/OtherPages/RegisterOrGetYourCard.PNG",
+    src: registerOrGetCardImg,
     alt: "Register or get your card page",
     label: "Registration",
   },
   {
-    src: "/assets/images/Dashboard/OtherPages/Self-Register.PNG",
+    src: selfRegisterImg,
     alt: "Customer self-registration page",
     label: "Self-Register",
   },
   {
-    src: "/assets/images/Dashboard/OtherPages/ExistingMemberGetCard.PNG",
+    src: existingMemberGetCardImg,
     alt: "Existing member get card page",
     label: "Get Card",
   },
@@ -76,7 +85,7 @@ const crmImages = [
 
 const loyaltyDashboardImage = [
   {
-    src: "/assets/images/Dashboard/Analytics/FuturaLoyalty.jpeg",
+    src: futuraLoyaltyImg,
     alt: "Futura loyalty analytics dashboard",
     label: "Loyalty Dashboard",
   },
