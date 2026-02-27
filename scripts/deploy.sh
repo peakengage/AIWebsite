@@ -2,8 +2,8 @@
 set -euo pipefail
 
 APP_DIR="$HOME/AIWebsite"
-BRANCH="${1:-deploy}"
-HEALTH_URL="http://localhost:3000/site"
+BRANCH="${1:-develop}"
+HEALTH_URL="http://localhost:3000"
 HEALTH_RETRIES=10
 HEALTH_DELAY=3
 

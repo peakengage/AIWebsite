@@ -5,7 +5,6 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  basePath: "/site",
 };
 
 export default withNextIntl(nextConfig);
