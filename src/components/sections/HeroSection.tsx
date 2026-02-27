@@ -109,15 +109,9 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left column: text content */}
           <div className="text-center lg:text-left">
-            <motion.div variants={slideInLeft}>
-              <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold text-white bg-white/15 border border-white/25">
-                {t("badge")}
-              </span>
-            </motion.div>
-
             <motion.h1
               variants={slideInLeft}
-              className="mt-6 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight font-heading"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight font-heading"
             >
               {t("tagline")}
             </motion.h1>

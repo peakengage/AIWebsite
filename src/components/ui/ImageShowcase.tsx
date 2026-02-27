@@ -20,8 +20,8 @@ interface ImageShowcaseProps {
 
 function PhoneFrame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative mx-auto w-full max-w-[220px]">
-      <div className="rounded-[2rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden" role="img" aria-label="Phone mockup">
+    <div className="w-[220px]">
+      <div className="relative rounded-[2rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden" role="img" aria-label="Phone mockup">
         {/* Notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-gray-800 rounded-b-xl z-10" />
         <div className="relative aspect-[9/19.5] overflow-hidden bg-white">
@@ -48,12 +48,12 @@ function BrowserFrame({ children }: { children: React.ReactNode }) {
 
 function PhoneCarousel({ images, className }: { images: ImageItem[]; className?: string }) {
   return (
-    <div className={cn("flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide", className)}>
-      {images.map((img, i) => (
+    <div className={cn("flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide", className)}>
+      {images.map((img) => (
         <motion.div
           key={srcKey(img.src)}
           variants={fadeInUp}
-          className="flex-shrink-0 snap-center"
+          className="flex-shrink-0 snap-center w-[220px]"
         >
           <PhoneFrame>
             <Image
