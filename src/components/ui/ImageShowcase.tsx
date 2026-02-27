@@ -1,11 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import type { ImageItem } from "@/types";
+
+/** Extract a string key from an ImageItem src (works for both string and StaticImageData). */
+function srcKey(src: string | StaticImageData): string {
+  return typeof src === "string" ? src : src.src;
+}
 
 interface ImageShowcaseProps {
   images: ImageItem[];
@@ -46,7 +51,7 @@ function PhoneCarousel({ images, className }: { images: ImageItem[]; className?:
     <div className={cn("flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide", className)}>
       {images.map((img, i) => (
         <motion.div
-          key={img.src}
+          key={srcKey(img.src)}
           variants={fadeInUp}
           className="flex-shrink-0 snap-center"
         >
@@ -72,7 +77,7 @@ function ImageGrid({ images, className }: { images: ImageItem[]; className?: str
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", className)}>
       {images.map((img) => (
-        <motion.div key={img.src} variants={fadeInUp}>
+        <motion.div key={srcKey(img.src)} variants={fadeInUp}>
           <BrowserFrame>
             <Image
               src={img.src}
@@ -101,7 +106,7 @@ function ImageTabs({ images, className }: { images: ImageItem[]; className?: str
       <div className="flex flex-wrap gap-2 mb-4">
         {images.map((img, i) => (
           <button
-            key={img.src}
+            key={srcKey(img.src)}
             onClick={() => setActiveIndex(i)}
             className={cn(
               "px-3 py-1.5 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/30",
@@ -117,7 +122,7 @@ function ImageTabs({ images, className }: { images: ImageItem[]; className?: str
       {/* Active image */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={images[activeIndex].src}
+          key={srcKey(images[activeIndex].src)}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}

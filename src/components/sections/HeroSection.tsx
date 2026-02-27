@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import {
   Wallet,
@@ -15,6 +15,10 @@ import { Button } from "@/components/ui/Button";
 import { FeatureCard } from "@/components/ui/FeatureCard";
 import { FeatureGrid } from "@/components/ui/FeatureGrid";
 
+import morleysRewardImg from "@/../public/assets/images/AppleWallet/MorleysReward.PNG";
+import dotzImg from "@/../public/assets/images/AppleWallet/Dotz.PNG";
+import stampCardImg from "@/../public/assets/images/AppleWallet/StampCard.png";
+
 interface HeroSectionProps {
   onContactClick: () => void;
 }
@@ -28,17 +32,17 @@ const capabilityKeys = [
 
 const heroPhones = [
   {
-    src: "/assets/images/AppleWallet/MorleysReward.PNG",
+    src: morleysRewardImg,
     altKey: "phoneAlt.morleysReward",
     position: "left",
   },
   {
-    src: "/assets/images/AppleWallet/Dotz.PNG",
+    src: dotzImg,
     altKey: "phoneAlt.dotz",
     position: "center",
   },
   {
-    src: "/assets/images/AppleWallet/StampCard.png",
+    src: stampCardImg,
     altKey: "phoneAlt.stampCard",
     position: "right",
   },
@@ -51,7 +55,7 @@ function HeroPhone({
   size = "md",
   style,
 }: {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   className?: string;
   size?: "sm" | "md";

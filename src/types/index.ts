@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import type { StaticImageData } from "next/image";
 
 export interface NavItem {
   labelKey: string;
@@ -17,7 +18,7 @@ export interface SectionProps {
 }
 
 export interface ImageItem {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   label?: string;
 }

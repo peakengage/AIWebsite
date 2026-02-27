@@ -1,5 +1,6 @@
 # dependencies
 node_modules/
+package-lock.json
 
 # next.js
 .next/
@@ -28,4 +29,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
 .idea/*
+/.playwright-mcp

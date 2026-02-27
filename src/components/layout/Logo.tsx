@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import peakengageLogo from "@/../public/assets/images/logos/peakengage-logo.png";
 
 interface LogoProps {
   className?: string;
@@ -12,7 +13,7 @@ export function Logo({ className, variant = "dark" }: LogoProps) {
   return (
     <a href="#" className={cn("flex items-center", className)}>
       <Image
-        src="/assets/images/logos/peakengage-logo.png"
+        src={peakengageLogo}
         alt="PeakEngage"
         width={180}
         height={40}

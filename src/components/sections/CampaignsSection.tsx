@@ -16,6 +16,12 @@ import { FeatureCard } from "@/components/ui/FeatureCard";
 import { FeatureGrid } from "@/components/ui/FeatureGrid";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
 
+import campaignListPageImg from "@/../public/assets/images/Dashboard/Campaign/CampaignListPage.jpeg";
+import audienceAndChannelTabImg from "@/../public/assets/images/Dashboard/Campaign/AudienceAndChannelTab.jpeg";
+import contentTabImg from "@/../public/assets/images/Dashboard/Campaign/ContentTab.jpeg";
+import scheduleRunTabImg from "@/../public/assets/images/Dashboard/Campaign/ScheduleRunTab.jpeg";
+import emailEditorImg from "@/../public/assets/images/Dashboard/Campaign/EmailEditor.jpeg";
+
 const channelKeys = [
   { icon: Bell, key: "pushNotifications" },
   { icon: Mail, key: "email" },
@@ -25,27 +31,27 @@ const channelKeys = [
 
 const campaignStepImages = [
   {
-    src: "/assets/images/Dashboard/Campaign/CampaignListPage.jpeg",
+    src: campaignListPageImg,
     alt: "Campaign list page showing all campaigns",
     label: "Campaign List",
   },
   {
-    src: "/assets/images/Dashboard/Campaign/AudienceAndChannelTab.jpeg",
+    src: audienceAndChannelTabImg,
     alt: "Audience and channel selection for campaigns",
     label: "Audience & Channel",
   },
   {
-    src: "/assets/images/Dashboard/Campaign/ContentTab.jpeg",
+    src: contentTabImg,
     alt: "Campaign content creation tab",
     label: "Content",
   },
   {
-    src: "/assets/images/Dashboard/Campaign/ScheduleRunTab.jpeg",
+    src: scheduleRunTabImg,
     alt: "Campaign scheduling and run options",
     label: "Schedule & Run",
   },
   {
-    src: "/assets/images/Dashboard/Campaign/EmailEditor.jpeg",
+    src: emailEditorImg,
     alt: "Email template editor",
     label: "Email Editor",
   },
