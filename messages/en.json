@@ -16,7 +16,7 @@
   "Hero": {
     "badge": "Mobile-First Platform",
     "tagline": "Mobile First Customer Engagement and Analytics Platform for Businesses",
-    "subtitle": "Digital passes in Apple and Google Wallet, multi-channel campaigns, powerful analytics and AI assistants — all in one platform built for retail.",
+    "subtitle": "Digital passes in Apple and Google Wallet, multi-channel campaigns, powerful analytics and AI assistants — all in one platform built for small and medium businesses. Specialized for retail.",
     "ctaPrimary": "Get in Touch",
     "ctaSecondary": "Explore Features",
     "phoneAlt": {
@@ -41,7 +41,8 @@
         "title": "AI Assistants",
         "description": "For executives, CRM managers, customer service and store managers"
       }
-    }
+    },
+    "addDemoCard": "Add a Demo Store and Loyalty Card"
   },
   "DigitalPasses": {
     "badge": "Digital Passes & Cards",

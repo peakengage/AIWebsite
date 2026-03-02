@@ -12,7 +12,7 @@ interface SectionWrapperProps {
 
 export function SectionWrapper({ id, children, className }: SectionWrapperProps) {
   return (
-    <section id={id} className={cn("py-20 md:py-28", className)}>
+    <section id={id} className={cn("pt-8 md:pt-12 pb-8 md:pb-12", className)}>
       <motion.div
         className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8"
         variants={staggerContainer}

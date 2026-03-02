@@ -70,10 +70,9 @@ export function AnalyticsSection() {
     <SectionWrapper id={SECTION_IDS.analytics} className="bg-gray-50">
       {/* Header */}
       <div className="text-center mb-16">
-        <GradientBadge>{t("badge")}</GradientBadge>
         <motion.h2
           variants={fadeInUp}
-          className="mt-4 text-3xl sm:text-4xl font-bold font-heading"
+          className="text-3xl sm:text-4xl font-bold font-heading"
         >
           {t("heading")}{" "}
           <span className="gradient-text">{t("headingHighlight")}</span>

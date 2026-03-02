@@ -16,7 +16,6 @@ import { GradientBadge } from "@/components/ui/GradientBadge";
 import { FeatureCard } from "@/components/ui/FeatureCard";
 import { FeatureGrid } from "@/components/ui/FeatureGrid";
 import { ImageShowcase } from "@/components/ui/ImageShowcase";
-import { Button } from "@/components/ui/Button";
 
 import appleWalletHomeScreenImg from "@/../public/assets/images/AppleWallet/AppleWalletHomeScreen.PNG";
 import googleWalletHomeScreenImg from "@/../public/assets/images/GoogleWallet/GoogleWalletHomeScreen.jpg";
@@ -71,15 +70,13 @@ const examplePasses = [
 
 export function DigitalPassesSection() {
   const t = useTranslations("DigitalPasses");
-
   return (
     <SectionWrapper id={SECTION_IDS.digitalPasses}>
       {/* Header */}
       <div className="text-center mb-16">
-        <GradientBadge>{t("badge")}</GradientBadge>
         <motion.h2
           variants={fadeInUp}
-          className="mt-4 text-3xl sm:text-4xl font-bold font-heading"
+          className="text-3xl sm:text-4xl font-bold font-heading"
         >
           {t("heading")}{" "}
           <span className="gradient-text">{t("headingHighlight")}</span>
@@ -132,12 +129,6 @@ export function DigitalPassesSection() {
         ))}
       </FeatureGrid>
 
-      {/* Demo Card CTA */}
-      <motion.div variants={fadeInUp} className="mt-12 text-center">
-        <Button variant="primary" size="lg">
-          {t("addDemoCard")}
-        </Button>
-      </motion.div>
     </SectionWrapper>
   );
 }
