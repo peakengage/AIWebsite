@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <Header onContactClick={openContact} />
       <main>
-        <HeroSection onContactClick={openContact} />
+        <HeroSection />
         <DigitalPassesSection />
         <CampaignsSection />
         <DataPlatformSection />

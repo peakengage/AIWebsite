@@ -149,12 +149,9 @@ export function SolutionsSection({ onContactClick }: SolutionsSectionProps) {
     <SectionWrapper id={SECTION_IDS.solutions} className="bg-gray-900">
       {/* Header */}
       <div className="text-center mb-16">
-        <GradientBadge>
-          <span className="text-tertiary">{t("badge")}</span>
-        </GradientBadge>
         <motion.h2
           variants={fadeInUp}
-          className="mt-4 text-3xl sm:text-4xl font-bold font-heading text-white"
+          className="text-3xl sm:text-4xl font-bold font-heading text-white"
         >
           {t("heading")}{" "}
           <span className="gradient-text">{t("headingHighlight")}</span>

@@ -17,9 +17,6 @@ import morleysRewardImg from "@/../public/assets/images/AppleWallet/MorleysRewar
 import dotzImg from "@/../public/assets/images/AppleWallet/Dotz.PNG";
 import stampCardImg from "@/../public/assets/images/AppleWallet/StampCard.png";
 
-interface HeroSectionProps {
-  onContactClick: () => void;
-}
 
 const capabilityKeys = [
   { icon: Wallet, key: "digitalPasses", href: `#${SECTION_IDS.digitalPasses}` },
@@ -86,7 +83,7 @@ function HeroPhone({
   );
 }
 
-export function HeroSection({ onContactClick }: HeroSectionProps) {
+export function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
@@ -101,7 +98,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
 
       {/* Main hero content */}
       <motion.div
-        className="relative max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-36 pb-16 lg:pb-20"
+        className="relative max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-28 pb-6 lg:pb-8"
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
@@ -123,25 +120,6 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
               {t("subtitle")}
             </motion.p>
 
-            <motion.div
-              variants={slideInLeft}
-              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <Button
-                variant="secondary"
-                size="lg"
-                onClick={onContactClick}
-              >
-                {t("ctaPrimary")}
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                href={`#${SECTION_IDS.digitalPasses}`}
-              >
-                {t("ctaSecondary")}
-              </Button>
-            </motion.div>
           </div>
 
           {/* Right column: phone mockup composition */}
@@ -187,7 +165,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
       {/* Capability cards */}
       <div className="relative bg-white border-t border-gray-100">
         <motion.div
-          className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 py-14"
+          className="max-w-[1304px] mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-6"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -216,6 +194,16 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
               );
             })}
           </div>
+          <motion.div variants={fadeInUp} className="mt-8 text-center">
+            <Button
+              variant="primary"
+              size="lg"
+              href="https://eu.peakengage.com/cd"
+              target="_blank"
+            >
+              {t("addDemoCard")}
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </section>
